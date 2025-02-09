@@ -12,6 +12,8 @@ body {
     text-align: center;
     font-size: 16px;
     line-height: 1.6;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 /* Container */
@@ -26,6 +28,8 @@ body {
     background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
     padding: 100px 0;
     border-bottom: 4px solid #ff4081;
+    transform: translateY(-30px); /* Starting position for animation */
+    opacity: 0; /* Starting opacity for animation */
 }
 
 .header h1 {
@@ -46,12 +50,13 @@ body {
     font-size: 1.2rem;
     text-decoration: none;
     border-radius: 30px;
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cta-button:hover {
     background: #ff80ab;
     transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 64, 129, 0.5);
 }
 
 /* Features Section */
@@ -82,6 +87,12 @@ body {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #555;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 188, 212, 0.3);
 }
 
 /* Download Section */
@@ -116,6 +127,45 @@ body {
 
 .footer a:hover {
     color: #ff80ab;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+.fade-up {
+    animation: fadeUp 1s ease-in-out forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade-up animation for features */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover Effects for Features */
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 188, 212, 0.3);
 }
 
 /* Responsive */
