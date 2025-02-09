@@ -24,7 +24,7 @@
                     <p>Version: <strong id="version">Loading...</strong></p>
                     <p>Size: <strong id="size">Loading...</strong></p>
                     <p>Release Date: <strong id="release-date">Loading...</strong></p>
-                    <a id="download-link" href="#" class="btn">Download Now</a>
+                    <a id="download-link" href="#" class="btn" target="_blank">Download Now</a>
                 </div>
             </div>
         </div>
@@ -35,25 +35,50 @@
     </footer>
 
     <script>
+        // Function to format the file size to KB, MB, or GB
+        function formatFileSize(sizeInBytes) {
+            if (sizeInBytes < 1024) {
+                return sizeInBytes.toFixed(2) + ' KB';
+            } else if (sizeInBytes < 1024 * 1024) {
+                return (sizeInBytes / 1024).toFixed(2) + ' MB';
+            } else {
+                return (sizeInBytes / (1024 * 1024)).toFixed(2) + ' GB';
+            }
+        }
+
         async function fetchLatestRelease() {
             try {
                 const response = await fetch('https://api.github.com/repos/Abhinav2011VS/TailFree-Application/releases/latest');
-                const data = await response.json();
-                const asset = data.assets[0];
+                
+                if (!response.ok) {
+                    throw new Error(`GitHub API Error: ${response.status} ${response.statusText}`);
+                }
 
-                if (!asset) {
+                const data = await response.json();
+
+                // Check if there are any assets
+                if (!data.assets || data.assets.length === 0) {
                     throw new Error('No assets found in the latest release.');
                 }
 
+                // Find the first .exe file (if available)
+                const asset = data.assets.find(a => a.name.endsWith('.exe')) || data.assets[0];
+
+                if (!asset) {
+                    throw new Error('No valid .exe file found in the latest release.');
+                }
+
                 const version = data.tag_name;
-                const size = (asset.size / (1024 * 1024)).toFixed(2) + ' MB'; // Convert bytes to MB
+                const size = formatFileSize(asset.size); // Format size as KB, MB, or GB
                 const releaseDate = new Date(data.published_at).toLocaleDateString('en-US', { month: 'long', year: 'numeric' }); // Format as "February 2025"
                 const downloadUrl = asset.browser_download_url;
 
+                // Update HTML elements with fetched data
                 document.getElementById('version').textContent = version;
                 document.getElementById('size').textContent = size;
                 document.getElementById('release-date').textContent = releaseDate;
                 document.getElementById('download-link').href = downloadUrl;
+
             } catch (error) {
                 console.error('Error fetching the latest release:', error);
                 document.getElementById('version').textContent = "N/A";
