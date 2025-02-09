@@ -37,12 +37,17 @@
     <script>
         // Function to format the file size to KB, MB, or GB
         function formatFileSize(sizeInBytes) {
-            if (sizeInBytes < 1024) {
-                return sizeInBytes.toFixed(2) + ' KB';
-            } else if (sizeInBytes < 1024 * 1024) {
-                return (sizeInBytes / 1024).toFixed(2) + ' MB';
-            } else {
-                return (sizeInBytes / (1024 * 1024)).toFixed(2) + ' GB';
+            // If the size is less than 1MB, show in KB
+            if (sizeInBytes < 1024 * 1024) {
+                return (sizeInBytes / 1024).toFixed(2) + ' KB';
+            } 
+            // If the size is less than 1GB, show in MB
+            else if (sizeInBytes < 1024 * 1024 * 1024) {
+                return (sizeInBytes / (1024 * 1024)).toFixed(2) + ' MB';
+            }
+            // If the size is 1GB or more, show in GB
+            else {
+                return (sizeInBytes / (1024 * 1024 * 1024)).toFixed(2) + ' GB';
             }
         }
 
