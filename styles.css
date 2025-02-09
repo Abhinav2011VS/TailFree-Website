@@ -1,4 +1,4 @@
-/* Global Reset */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,187 +7,106 @@
 }
 
 body {
-    background: linear-gradient(45deg, #00bcd4, #ff4081); /* Gradient background */
+    background: linear-gradient(45deg, #00bcd4, #ff4081);
     color: white;
     text-align: center;
     font-size: 16px;
     line-height: 1.6;
-    overflow-x: hidden; /* Prevents horizontal scroll */
-    scroll-behavior: smooth; /* Smooth scrolling */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-/* Container */
 .container {
     width: 80%;
-    max-width: 1200px;
     margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #ff4081;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /* Header */
 .header {
-    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
-    padding: 100px 0;
-    border-bottom: 4px solid #ff4081;
-    transform: translateY(-30px); /* Starting position for animation */
-    opacity: 0; /* Starting opacity for animation */
-}
-
-.header h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.header p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+    padding: 80px 0;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .cta-button {
-    background: #ff4081;
-    color: white;
-    padding: 15px 35px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px 20px;
+    background-color: #ff4081;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .cta-button:hover {
-    background: #ff80ab;
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(255, 64, 129, 0.5);
+    background-color: #e63946;
 }
 
-/* Features Section */
-.features {
-    background: #fff;
-    color: #333;
+/* Typing Effect Section */
+.typing-effect {
     padding: 50px 0;
-}
-
-.features h2 {
-    font-size: 3rem;
-    margin-bottom: 40px;
-}
-
-.feature-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 40px;
-}
-
-.feature h3 {
-    font-size: 2rem;
-    color: #00bcd4;
-    margin-bottom: 15px;
-}
-
-.feature p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.feature:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 20px rgba(0, 188, 212, 0.3);
-}
-
-/* Download Section */
-.download {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 50px 0;
+    background: #222;
     color: white;
+    text-align: center;
 }
 
-.download h2 {
+.typing-text {
     font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.download p {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-}
-
-/* Footer Section */
-.footer {
-    background-color: #222;
-    padding: 20px 0;
-    color: #bbb;
-}
-
-.footer a {
-    color: #ff4081;
-    text-decoration: none;
     font-weight: bold;
+    color: #ff4081;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    border-right: 4px solid #ff4081;
+    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
 }
 
-.footer a:hover {
-    color: #ff80ab;
+.typing-description {
+    font-size: 1.5rem;
+    color: #bbb;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 2s;
 }
 
-/* Animations */
-.fade-in {
-    animation: fadeIn 1s forwards;
+/* Typing Animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
-.fade-up {
-    animation: fadeUp 1s ease-in-out forwards;
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
-/* Fade-in animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(30px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
-/* Fade-up animation for features */
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Footer */
+.footer {
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
 }
-
-/* Hover Effects for Features */
-.feature:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 20px rgba(0, 188, 212, 0.3);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2.5rem;
-    }
-
-    .header p {
-        font-size: 1.2rem;
-    }
-
-    .cta-button {
-        font-size: 1rem;
-        padding: 12px 30px;
-    }
-
-    .feature h3 {
-        font-size: 1.5rem;
-    }
-
-    .feature p {
-        font-size: 1rem;
-    }
+.footer a {
+    color: #ff4081;
 }
