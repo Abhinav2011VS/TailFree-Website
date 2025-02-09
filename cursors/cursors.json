@@ -1,0 +1,82 @@
+{
+  "cursors": {
+    "dark-mode": {
+      "alternate": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/alternate.cur",
+      "beam": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/beam.cur",
+      "busy": {
+        "dark_blue": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/dark_blue/busy.ani",
+        "green": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/green/busy.ani",
+        "light_blue": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/light_blue/busy.ani",
+        "magenta": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/magenta/busy.ani",
+        "orange": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/orange/busy.ani",
+        "pink": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/pink/busy.ani",
+        "purple": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/purple/busy.ani",
+        "red": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/red/busy.ani",
+        "yellow": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/yellow/busy.ani"
+      },
+      "dgn1": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/dgn1.cur",
+      "dgn2": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/dgn2.cur",
+      "handwriting": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/handwriting.cur",
+      "help": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/help.cur",
+      "horz": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/horz.cur",
+      "link": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/link.cur",
+      "move": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/move.cur",
+      "person": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/person.cur",
+      "pin": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/pin.cur",
+      "pointer": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/pointer.cur",
+      "precision": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/precision.cur",
+      "unavailable": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/unavailable.cur",
+      "vert": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/vert.cur",
+      "working": {
+        "dark_blue": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/dark_blue/working.ani",
+        "green": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/green/working.ani",
+        "light_blue": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/light_blue/working.ani",
+        "magenta": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/magenta/working.ani",
+        "orange": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/orange/working.ani",
+        "pink": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/pink/working.ani",
+        "purple": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/purple/working.ani",
+        "red": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/red/working.ani",
+        "yellow": "https://tailfree.pages.dev/cursors/get/dark-mode/cursors/yellow/working.ani"
+      }
+    },
+    "light-mode": {
+      "alternate": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/alternate.cur",
+      "beam": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/beam.cur",
+      "busy": {
+        "dark_blue": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/dark_blue/busy.ani",
+        "green": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/green/busy.ani",
+        "light_blue": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/light_blue/busy.ani",
+        "magenta": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/magenta/busy.ani",
+        "orange": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/orange/busy.ani",
+        "pink": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/pink/busy.ani",
+        "purple": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/purple/busy.ani",
+        "red": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/red/busy.ani",
+        "yellow": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/yellow/busy.ani"
+      },
+      "dgn1": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/dgn1.cur",
+      "dgn2": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/dgn2.cur",
+      "handwriting": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/handwriting.cur",
+      "help": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/help.cur",
+      "horz": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/horz.cur",
+      "link": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/link.cur",
+      "move": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/move.cur",
+      "person": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/person.cur",
+      "pin": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/pin.cur",
+      "pointer": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/pointer.cur",
+      "precision": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/precision.cur",
+      "unavailable": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/unavailable.cur",
+      "vert": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/vert.cur",
+      "working": {
+        "dark_blue": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/dark_blue/working.ani",
+        "green": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/green/working.ani",
+        "light_blue": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/light_blue/working.ani",
+        "magenta": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/magenta/working.ani",
+        "orange": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/orange/working.ani",
+        "pink": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/pink/working.ani",
+        "purple": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/purple/working.ani",
+        "red": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/red/working.ani",
+        "yellow": "https://tailfree.pages.dev/cursors/get/light-mode/cursors/yellow/working.ani"
+      }
+    }
+  }
+}
